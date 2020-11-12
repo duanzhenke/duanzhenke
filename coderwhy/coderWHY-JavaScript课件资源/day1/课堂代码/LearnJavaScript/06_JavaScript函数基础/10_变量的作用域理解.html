@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // 变量作用域: 变量在哪一个范围内可以被使用, 这个范围就是变量的作用域.
+        var name = "why";
+        // 块级作用域: 在JavaScript(ES5)里面没有块级作用域
+        // 函数作用域: 函数内部的代码是有自己的作用域的
+
+        // 1.块是没有自己的作用域
+        // {
+        //     var age = 18;
+        // }
+        // console.log(age);
+
+
+        // 2.函数的作用域
+        function test() {
+            // 局部变量
+            var age = 20;
+            var height = 1.88;
+            var name = "kobe";
+
+            console.log(age);
+            console.log(height);
+            console.log(name);
+        }
+
+        // 全局变量
+        var name = "why";
+
+        // 结论一: 在全局默认是不能访问局部的变量的
+        // console.log(age);
+        // 结论二: 在函数中, 访问一个变量时, 会优先去查找自己的局部变量, 如果没有找到, 会去查找全局变量.
+        test();
+
+    </script>
+</body>
+</html>

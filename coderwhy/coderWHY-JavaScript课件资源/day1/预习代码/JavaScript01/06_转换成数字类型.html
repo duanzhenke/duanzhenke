@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        // 1.Number函数
+        console.log(Number(true)); // 1
+        console.log(Number("123")); // 123
+        console.log(Number("12.34")); // 12.34
+        console.log(Number(null)); // 0
+        console.log(Number(undefined));  // NaN
+
+        // 2.parseInt
+        console.log(parseInt(true)); // NaN
+        console.log(parseInt(null)); // NaN
+        console.log(parseInt(undefined)); // NaN
+        console.log(parseInt("123")); // 123
+        console.log(parseInt("123.34")); // 123
+        console.log(parseInt("a123")); // NaN
+        console.log(parseInt("123abc")); // 123
+
+        // 3.parseFloat
+        console.log(parseFloat("123.34"));
+    </script>
+</body>
+</html>

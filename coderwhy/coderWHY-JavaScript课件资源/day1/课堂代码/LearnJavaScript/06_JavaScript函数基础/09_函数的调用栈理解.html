@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        function test1() {
+            console.log("test1函数被调用");
+            test2();
+        }
+        
+        function test2() {
+            console.log("test2函数被调用");
+            test3();
+        }
+        
+        function test3() {
+            console.log("test3函数被调用");
+        }
+
+        test1();
+        
+    </script>
+</body>
+</html>

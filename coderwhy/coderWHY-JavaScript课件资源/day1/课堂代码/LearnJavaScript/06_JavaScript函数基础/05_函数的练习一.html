@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // 1.练习一: 实现一个加法计算器
+        function sum(num1, num2) {
+            // var result = num1 + num2;
+            // return result;
+            return num1 + num2;
+        }
+
+        var total = sum(20, 30);
+        console.log(total);
+
+        // 2.练习二: 定义函数, 传入宽高计算矩形的面积
+        //  stack overflow
+        // 矩形面积: 宽度 * 高度
+        function calcRectArea(width, height) {
+            return width * height;
+        }
+        var area1 = calcRectArea(10, 20);
+        var area2 = calcRectArea(20, 30);
+        console.log(area1);
+        console.log(area2);
+
+        // 3.练习三: 定义函数, 传入半径计算圆形的面积
+        // 圆形的面积: πr²
+        function calcCircleArea(radius) {
+            return Math.PI * radius * radius;
+        }
+        var area3 = calcCircleArea(10);
+        console.log(area3);
+
+        // 补充: 获取π的值
+        var pi = Math.PI;
+        console.log(pi);
+
+    </script>
+</body>
+</html>

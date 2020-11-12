@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // 1.定义数组
+        var nums = [10, 323, 8, 10, 66, 789, 128, 99, 222, 88, 43];
+
+        // 2.对数组进行排序
+        // 需求一: 将最大的数字想办法放到最后(冒泡思想)
+        // 0 1
+        // 1 2
+        // 2 3
+        // for (var i = 0; i < nums.length-1; i++) {
+        //     if (nums[i] > nums[i+1]) {
+        //         var temp = nums[i];
+        //         nums[i] = nums[i+1];
+        //         nums[i+1] = temp;
+        //     }
+        // }
+
+        // for (var i = 0; i < nums.length-1-1; i++) {
+        //     if (nums[i] > nums[i+1]) {
+        //         var temp = nums[i];
+        //         nums[i] = nums[i+1];
+        //         nums[i+1] = temp;
+        //     }
+        // }
+
+        
+        // for (var i = 0; i < nums.length-1-1-1; i++) {
+        //     if (nums[i] > nums[i+1]) {
+        //         var temp = nums[i];
+        //         nums[i] = nums[i+1];
+        //         nums[i+1] = temp;
+        //     }
+        // }
+        
+        // for (var i = 0; i < nums.length-1-1-1-1; i++) {
+        //     if (nums[i] > nums[i+1]) {
+        //         var temp = nums[i];
+        //         nums[i] = nums[i+1];
+        //         nums[i+1] = temp;
+        //     }
+        // }
+
+        for (var j = nums.length-1; j > 0; j--) {
+            for (var i = 0; i < j; i++) {
+                if (nums[i] > nums[i+1]) {
+                    var temp = nums[i];
+                    nums[i] = nums[i+1];
+                    nums[i+1] = temp;
+                }
+            }
+        }
+
+        console.log(nums);
+
+    </script>
+</body>
+</html>

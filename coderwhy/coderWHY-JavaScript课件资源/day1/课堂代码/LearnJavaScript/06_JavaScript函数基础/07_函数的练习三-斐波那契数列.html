@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // 需求: 求一个斐波那契数
+        // 1.方式一: for循环实现
+        // 1 1 2 3 5 8 13 21 34.......
+        // n=0
+        // n=1
+        // n=2
+        // n=3
+        // n=4
+        function fib(n) {
+            if (n === 0 || n === 1) {
+                return 1
+            }
+            var num1 = 1;
+            var num2 = 1;
+            var sum = 2;
+            for (var i = 2; i < n; i++) {
+                num1 = num2;
+                num2 = sum;
+                sum = num1 + num2;
+            }
+            return sum;
+        }
+        console.log(fib(0));
+        console.log(fib(1));
+        console.log(fib(2));
+        console.log(fib(3));
+        console.log(fib(4));
+        console.log(fib(5));
+        console.log(fib(6));
+        console.log(fib(7));
+
+        // 2.方式二: 递归调用方式
+        // 什么递归调用
+        // 2.1.一个函数中可以去调用另外一个函数
+        function test1() {
+            console.log("test1被调用");
+            test2();
+        }
+
+        function test2() {
+            console.log("test2被调用");
+        }
+
+        test1();
+
+        // 2.2.函数自己调用自己: 递归调用
+        /*
+        在开发中尽量避免使用递归:
+            1.递归如果没有写好结束条件, 意味着会无限调用
+            2.递归调用非常占据栈空间内存(空间复杂度)/效率比较低(时间复杂度)
+        */
+        // function test() {
+        //     console.log("test被调用");
+        //     test();
+        // }
+
+        // test();
+
+        // 2.3.使用递归调用实现斐波那契数列
+        // fib2(2): 2
+        // fib2(1): 1
+        function fib2(n) {
+            if (n === 0 || n === 1) {
+                return 1;
+            }
+            return fib2(n-1) + fib2(n-2);
+        }
+
+        console.log(fib2(8));
+
+        fib2(50);
+
+        // 0: 1
+        // 1: 1
+        // 2: 2
+        // 3: 3
+        // 5: 
+
+    </script>
+</body>
+</html>

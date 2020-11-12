@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // 1.定义数组
+        var names = ["lilei", "hanmeimei", "tom", "poly", "lily"];
+        
+
+        // 2.反向的遍历
+        // for (var i = 0; i < names.length; i++) {
+        //     console.log(names[i]);
+        // }
+        for (var i = names.length - 1; i >= 0; i--) {
+            console.log(i);
+            console.log(names[i]);
+        }
+
+        // 3.将数组中所有的元素使用-进行分割
+        /*
+            1.将所有的name拼接到message中
+            2.在所有的名字后面+ “-”
+            3.将最后一个”-”去除掉
+        */
+        // 效果: "lilei-hanmeimei-tom-poly-lily"
+        var message; // "undefined"
+        for (var i = 0; i < names.length; i++) {
+            // console.log(names[i]);
+            message += names[i];
+            if (i !== names.length - 1) {
+                message += "-";
+            }
+        }
+        console.log(message);
+
+        // message += names[names.length-1];
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        var name = "why";
+
+        // 对象中存放的是键值对: key(键): value(值)
+        var info = {
+            name: "why",
+            age: 18,
+            height: 1.88,
+
+            eating: function() {
+                console.log("吃东西");
+            }
+        };
+
+        // 1.与运算的特殊用法: 多个条件都为true
+        // 短路与: 有一个条件为false, 那么后续不再判断
+        // 条件1 && 条件2 && 条件3
+        // console.log(info.eating());
+
+        // if (info.eating) {
+        //     info.eating()
+        // }
+
+        info.eating && info.eating();
+        console.log("--------");
+
+        // 2.或运算的特殊用法: 只要有一个条件为true
+        // 短路或: 一旦遇到一个条件为true, 那么后面的条件不再判断
+        // 条件1 || 条件2 || 条件3
+        var message = info.name || info.age || info.height;
+        console.log(message);
+        
+    </script>
+</body>
+</html>

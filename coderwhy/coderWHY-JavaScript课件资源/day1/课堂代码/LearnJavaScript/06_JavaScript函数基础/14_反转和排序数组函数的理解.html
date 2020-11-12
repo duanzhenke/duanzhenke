@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        
+        // 1.反转数组
+        // function reverseArray(arr) {
+        //     for (var i = 0; i < arr.length / 2; i++) {
+        //         var temp = arr[i];
+        //         arr[i] = arr[arr.length-1-i];
+        //         arr[arr.length-1-i] = temp;
+        //     }
+        // }
+
+        // var nums1 = [10, 14, 8, 5, 88];
+        // reverseArray(nums1);
+        // console.log(nums1);
+
+        // 2.排序
+        function sortArray(arr) {
+            for (var j = 0; j < arr.length; j++) {
+                for (var i = j+1; i < arr.length; i++) {
+                    if (arr[j] > arr[i]) {
+                        var temp = arr[j];
+                        arr[j] = arr[i];
+                        arr[i] = temp;
+                    }
+                }
+
+            }
+        }
+
+        var nums1 = [10, 14, 8, 5, 88];
+        sortArray(nums1);
+        console.log(nums1);
+    
+    </script>
+</body>
+</html>

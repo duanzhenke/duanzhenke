@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+    </style>
+</head>
+<body>
+    
+    <!-- 1.在HTML元素中直接执行JavaScript代码(不推荐) -->
+    <a href="" onclick="alert('我是一个弹窗')">弹出弹窗</a>
+    <a href="javascript:alert('我也是弹窗')">弹出弹窗</a>
+
+    <h2 style="color: red;"></h2>
+
+    <!-- 2.书写到script标签中(学习阶段) -->
+    <script>
+        alert('我是直接弹出的弹窗');
+    </script>
+
+    <!-- 3.从外部引入JavaScript文件(真实开发) -->
+    <script src="./js/test.js"></script>
+
+    <script type="text/javascript"></script>
+</body>
+</html>

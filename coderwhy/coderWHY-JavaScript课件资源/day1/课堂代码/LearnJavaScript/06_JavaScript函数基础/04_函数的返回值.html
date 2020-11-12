@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // function sum(num1, num2) {
+        //     console.log(num1 + num2);
+        // }
+
+        // sum(20, 30);
+        // var age = prompt("aaaaaa");
+
+        // 1.函数的返回值的基本使用
+        function sum(num1, num2) {
+            var result = num1 + num2;
+            console.log(result);
+            return result;
+        }
+
+        // 调用函数
+        var total = sum(20, 30);
+        console.log(total);
+
+        // 2.返回值的注意事项
+        // 注意一: 一旦函数中执行了return操作, 那么函数会立即停止, 后续的代码都不再执行
+        // 注意二: 如果一个函数没有写返回值, 相当于默认返回undefined
+        // 注意三: 如果一个函数写了return, return后面没有跟内容, 相当于也是return了一个undefined
+        function test() {
+            console.log("1");
+            console.log("2");
+            return;
+            console.log("3");
+            console.log("4");
+        }
+
+        var result = test();
+        console.log(result);
+
+
+        // 了解: 以后会写类似这样的函数
+        function dateFormat(timestamp) {
+            return "2018-11-11";
+        }
+
+        var result1 = dateFormat(132342423423);
+        var result2 = dateFormat(132341213213);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // 1.练习一: 打印0~99的数字
+        // for (var i = 0; i < 100; i++) {
+        //     console.log(i);
+        // }
+
+        // 2.练习二: 打印1~100的数字
+        // for (var i = 1; i <= 100; i++) {
+        //     console.log(i);
+        // }
+
+        // 3.练习三: 打印100~1的数字
+        // for (var i = 100; i > 0; i--) {
+        //     console.log(i);
+        // }
+
+        // 4.练习四: 计算0~99的和
+        // var total = 0;
+        // for (var i = 0; i < 100; i++) {
+        //     console.log(i);
+        //     total += i;
+        // }
+        // console.log(total);
+
+        // 5.练习五: 计算0~99的奇数和和偶数和
+        var oddTotal = 0;
+        var evenTotal = 0;
+        for (var i = 0; i < 100; i++) {
+            if (i % 2 === 0) { // 偶数
+                evenTotal += i;
+            } else { // 奇数
+                oddTotal += i;
+            }
+        }
+        console.log("奇数和:", oddTotal);
+        console.log("偶数和:", evenTotal);
+
+
+    </script>
+</body>
+</html>

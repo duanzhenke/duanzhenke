@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // 1.苹果的单价
+        var price = 5;
+
+        // 2.用户输入购买的数量, 单位斤
+        var weight = prompt("请输入购买多少斤?");
+        
+        // 3.计算总价格
+        var money = price * weight;
+
+        // 4.超过5斤, 立减8元
+        if (weight > 5) {
+            money -= 8;
+        }
+
+        console.log("您需要支付:" + money + "元");
+
+
+    </script>
+</body>
+</html>

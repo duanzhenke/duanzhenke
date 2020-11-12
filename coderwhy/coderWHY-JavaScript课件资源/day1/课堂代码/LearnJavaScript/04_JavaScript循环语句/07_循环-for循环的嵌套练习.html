@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        span {
+            display: inline-block;
+            width: 80px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            border-top: 1px solid #f00;
+            border-right: 1px solid #f00;
+        }
+        
+        div {
+            display: inline-block;
+            border-left: 1px solid #f00;
+            border-bottom: 1px solid #f00;
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+        // 1.在屏幕上显示一个❤矩形
+        // document.write("❤");
+        // for (var i = 0; i < 10; i++) {
+        //     // document.write("❤ ❤ ❤ ❤ ❤ ❤");
+        //     for (var j = 0; j < 10; j++) {
+        //         document.write("❤ ");
+        //     }
+
+        //     document.write("<br>")
+        // }
+
+        // 2.在屏幕上显示一个❤三角形
+        // for (var i = 0; i < 10; i++) {
+        //     for (var j = 0; j <= i; j++) {
+        //         document.write("❤ ");
+        //     } 
+
+        //     document.write("<br>");
+        // }
+
+        // 3.在屏幕上显示一个九九乘法表
+        for (var i = 1; i < 10; i++) {
+            for (var j = 1; j <= i; j++) {
+                var str = j + "*" + i + "=" + j * i + "&nbsp;&nbsp;&nbsp;";
+                document.write(str);
+            }
+            document.write("<br>");
+        }
+
+        document.write("<div>");
+        for (var i = 1; i < 10; i++) {
+            for (var j = 1; j <= i; j++) {
+                var str = "<span>" + j + "*" + i + "=" + j * i + "</span>";
+                document.write(str);
+            }
+            document.write("<br>");
+        }
+        document.write("</div>");
+
+    </script>
+</body>
+</html>

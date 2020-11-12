@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // parseInt
+        var str1 = "123";
+        var num1 = parseInt(str1);
+        console.log(num1, typeof num1); // 123 number
+
+        var str2 = "123.45";
+        var num2 = parseInt(str2);
+        console.log(num2, typeof num2); // 123 number
+
+        var str3 = "abc";
+        var num3 = parseInt(str3);
+        console.log(num3, typeof num3); // NaN number
+
+        var str4 = "abc123";
+        var num4 = parseInt(str4);
+        console.log(num4, typeof num4); // NaN number
+
+        var str5 = "123abc";
+        var num5 = parseInt(str5);
+        console.log(num5, typeof num5); // 123 number
+
+        // parseFloat
+        var s1 = "123.45";
+        var n1 = parseFloat(s1);
+        console.log(n1, typeof n1); // 123.45 number
+        
+        var s2 = "123";
+        var n2 = parseFloat(s2);
+        console.log(n2, typeof n2); // 123 number
+        
+        var s3 = "123.45.67";
+        var n3 = parseFloat(s3);
+        console.log(n3, typeof n3); // 123.45 number
+
+        // parseInt-> radix
+        var str = "111";
+        console.log(parseInt(str, 16));
+
+        // parseFloat()
+        // alert()
+
+    </script>
+</body>
+</html>

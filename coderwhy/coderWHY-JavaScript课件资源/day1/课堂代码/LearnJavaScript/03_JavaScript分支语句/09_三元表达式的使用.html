@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // 1.比较两个数字
+        var m = 50;
+        var n = 30;
+        var max = m > n? m: n;
+        console.log(max);
+
+        // 通过if else
+        // if (m > n) {
+        //     max = m;
+        // } else {
+        //     max = n;
+        // }
+
+        // 2.判断一个人是否是成年人
+        var age = 12;
+        var result = age >= 18? "成年人": "未成年人";
+
+        // if (age >= 18) {
+        //     result = "成年人";
+        // } else {
+        //     result = "未成年人";
+        // }
+        console.log(result);
+
+        // 3.判断要执行哪一个函数(了解)
+        function test1() {
+            console.log("test1");
+        }
+        function test2() {
+            console.log("test2");
+        }
+        var flag = true;
+        flag? test1(): test2();
+
+
+    </script>
+</body>
+</html>

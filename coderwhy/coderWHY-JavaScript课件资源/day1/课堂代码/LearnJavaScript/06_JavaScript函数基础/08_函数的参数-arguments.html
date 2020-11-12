@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        // 1.对arguments的认识
+        // arguments对象: 在函数当中
+        function sum(num1, num2) {
+
+            console.log(arguments);
+            console.log(arguments[2]);
+
+            return num1 + num2;
+        }
+        // var result = sum(20, 30);
+        // console.log(result);
+        var result = sum(20, 30, 40, 50, 100);
+        // console.log(result);
+
+
+        // 2.新需求: 定义一个函数, 可以计算1/2/3/4/5...
+        function newSum() {
+            var total = 0;
+            for (var i = 0; i < arguments.length; i++) {
+                // console.log(arguments[i]);
+                total += arguments[i];
+            }
+            return total;
+        }
+        console.log(newSum(10, 20));
+        console.log(newSum(5, 10, 66));
+
+    </script>
+</body>
+</html>
